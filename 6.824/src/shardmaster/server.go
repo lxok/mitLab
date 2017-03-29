@@ -352,6 +352,7 @@ func (sm *ShardMaster) ExeConfigs(seq int) Config {
 				tmpCounter[gid]++
 			}
 
+			//compute how many shards should be movited of a group.
 			for gid, _ := range tmpCounter {
 				if tmpCounter[gid] >= max {
 					if MaxMinCounter[max] > 0 {
