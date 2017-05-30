@@ -699,7 +699,7 @@ func (kv *ShardKV) SendShard(oldCurrentConfig *shardmaster.Config, oldResponsibl
 			}
 		}
 
-		//send shard finish, call the target server to  intial
+		//send shard finish, call the target server to intial
 		var shardInitialArgs ShardInitalArgs
 		shardInitialArgs.ConfigNum = receiveConfig.Num
 		shardInitialArgs.ShardNum = shardNum
